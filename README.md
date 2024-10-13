@@ -1,53 +1,26 @@
 # Eclipse Solutions ESLint config
 
-## Whats included?
-
-- Standard config base;
-- React plugin;
-- React Hooks plugin;
-- JSX a11y plugin;
-- Prettier;
-
 ## Setup
 
-### React (with Next.js)
-
 Install dependencies:
 ```
 npm i -D eslint eclipse-solutions-eslint-config
 ```
-Inside `.eslintrc.json`
-```
-{
-  "extends": [
-    "eclipse-solutions-eslint-config/next", 
-    "next/core-web-vitals"
-  ]
-}
-```
 
-### React (without Next.js)
+### React
 
-Install dependencies:
+Inside `eslint.config.mjs`
 ```
-npm i -D eslint eclipse-solutions-eslint-config
-```
-Inside `.eslintrc.json`
-```
-{
-  "extends": "eclipse-solutions-eslint-config/react"
-}
+import config from 'eclipse-solutions-eslint-config/react.mjs'
+
+export default config
 ```
 
 ### Node.js
 
-Install dependencies:
+Inside `eslint.config.mjs`
 ```
-npm i -D eslint eclipse-solutions-eslint-config
-```
-Inside `.eslintrc.json`
-```
-{
-  "extends": "eclipse-solutions-eslint-config/node"
-}
+import config from 'eclipse-solutions-eslint-config/node.mjs'
+
+export default config
 ```
