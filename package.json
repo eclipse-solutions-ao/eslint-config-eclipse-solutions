@@ -1,6 +1,6 @@
 {
   "name": "eclipse-solutions-eslint-config",
-  "version": "3.0.7",
+  "version": "0.0.1",
   "private": false,
   "description": "ESLint configuration used by Eclipse Solutions.",
   "main": "base.mjs",
